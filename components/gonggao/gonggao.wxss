@@ -1,0 +1,32 @@
+/* components/gonggao/gonggao.wxss */
+.gonggao {
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background-color: white;
+  border: 7rpx solid #ccc;
+  border-radius: 10px;
+}
+
+.gonggao .gg-title {
+  margin: 10rpx;
+  padding: 10rpx;
+  text-align: center;
+  border: 3px dashed #ccc;
+  font-weight: bold;
+  font-size: 35rpx;
+  background-color: #d9e8ff;
+}
+
+.gg-content {
+  margin: 10rpx;
+  border: 2px solid #ccc;
+  /* background-color: rgb(255, 245, 245); */
+}
+
+.gg-content .contents {
+  margin: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 2px dashed #ccc;
+  font-size: 26rpx;
+}

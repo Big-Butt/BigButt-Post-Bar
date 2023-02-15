@@ -1,0 +1,16 @@
+<!--pages/publish/publish.wxml-->
+<view class="publish-box">
+  <view class="title">
+    <view class="title-text">标题：</view>
+    <input bindinput="getTitle" type="text" placeholder="请输入标题" />
+  </view>
+  <view class="content">
+    <textarea bindinput="getContent" type="text" placeholder="来吧，尽情发挥吧..." maxlength="1000"></textarea>
+  </view>
+  <view class="img" wx:if="{{uploadImg != ''}}">
+    <image src="{{uploadImg}}" mode="aspectFill"></image>
+  </view>
+</view>
+<button bindtap="uploadImg">上传图片</button>
+<button bindtap="postArticle">提交</button>
+<button bindtap="getArticle">获取</button>

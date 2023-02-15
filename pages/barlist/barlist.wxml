@@ -1,0 +1,29 @@
+<!--pages/barlist/barlist.wxml-->
+<view class="All">
+  <!-- 回到顶部 -->
+  <image src='/images/goTop.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+  <!-- 帖子列表 -->
+  <view class="article" wx:for="{{article}}" wx:for-index="index" wx:key="index">
+    <navigator url="/pages/article/article?articleId={{index}}">
+      <view class="userInfo">
+        <image class="touxiang" src="{{item.touxiang}}" mode="aspectFill"></image>
+        <view class="userName">
+          @{{item.user_name}}
+        </view>
+      </view>
+
+      <view class="title">
+        {{item.title}}
+      </view>
+
+      <view class="img" wx:if="{{item.imgUrl !== ''}}">
+        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+      </view>
+
+      <view class="content">
+        {{item.content}}
+      </view>
+    </navigator>
+
+  </view>
+</view>

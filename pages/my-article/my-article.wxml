@@ -1,0 +1,35 @@
+<view class="article" wx:for-index="index" wx:key="index">
+  <!-- 用户昵称 -->
+  <view class="username">作者：@{{showUsername}}</view>
+
+  <!-- 帖子标题 -->
+  <view class="title">{{showTitle}}</view>
+
+  <!-- 正文内容 -->
+  <view class="content">
+    {{showContent}}
+    <!-- 正文图片 -->
+    <image src="{{showImg}}" mode="widthFix" wx:if="{{showImg != null}}"></image>
+  </view>
+</view>
+
+<view class="share-box">
+  <view class="share" id="share">
+    <image src="/images/分享.png"></image>
+    <button open-type="share">分享</button>
+  </view>
+  <view class="reply">
+    <image src="/images/评论.png"></image>
+    回复
+  </view>
+  <view class="likes">
+    <image src="/images/点赞.png"></image>
+    点赞
+  </view>
+</view>
+
+<button class="delete" bindtap="delete">删除</button>
+
+<view class="comment">
+
+</view>

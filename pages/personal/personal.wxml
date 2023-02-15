@@ -1,0 +1,20 @@
+<!--pages/personal/personal.wxml-->
+<view class="title container">
+  修改个人资料
+</view>
+
+<view class="message">
+  <view class="small">
+    头像链接: <input type="text" value="{{imgUrl}}" bindinput="getNewImg"/>
+  </view>
+  <view class="small">
+    用户名称: <text class="gray">(1-8位)</text>
+    <input type="text" value="{{username}}" bindinput="getNewUsername"/>
+  </view>
+  <view class="small">
+    密码: <text class="gray">(不超过12位)</text>
+    <input type="text" value="{{password}}" bindinput="getNewPassword"/>
+  </view>
+</view>
+
+<button class="submit" bindtap="submit">提交修改</button>

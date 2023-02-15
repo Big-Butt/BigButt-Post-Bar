@@ -1,0 +1,48 @@
+<view class="my">
+  <view class="touxiang">
+    <image src="{{imgUrl}}"></image>
+  </view>
+  <navigator url="/pages/login/login" class="gologin" wx:if="{{username == ''}}">登录/注册</navigator>
+  <view class="username">{{username}}</view>
+</view>
+
+<view class="grid-list">
+  <navigator class="grid-item" bindtap="goMessage">
+    <image src="/images/mine-grid-img/我的帖子.png"></image>
+    <view>我的帖子</view>
+  </navigator>
+  <navigator class="grid-item" bindtap="goBarList">
+    <image src="/images/mine-grid-img/回去逛贴.png"></image>
+    <view>回去逛贴</view>
+  </navigator>
+  <navigator class="grid-item" bindtap="goIndex">
+    <image src="/images/mine-grid-img/回到首页.png"></image>
+    <view>回到首页</view>
+  </navigator>
+  <navigator class="grid-item">
+    <image src="/images/mine-grid-img/我的关注.png"></image>
+    <view>我的关注</view>
+  </navigator>
+  <navigator class="grid-item" url="/pages/personal/personal">
+    <image src="/images/mine-grid-img/个人资料.png"></image>
+    <view>个人资料</view>
+  </navigator>
+  <navigator class="grid-item">
+    <image src="/images/mine-grid-img/我的回复.png"></image>
+    <view>我的回复</view>
+  </navigator>
+  <navigator class="grid-item">
+    <image src="/images/mine-grid-img/活动中心.png"></image>
+    <view>活动中心</view>
+  </navigator>
+  <navigator class="grid-item">
+    <image src="/images/mine-grid-img/附近.png"></image>
+    <view>附近</view>
+  </navigator>
+  <navigator class="grid-item">
+    <image src="/images/mine-grid-img/小游戏.png"></image>
+    <view>小游戏</view>
+  </navigator>
+</view>
+
+<button wx:if="{{username != ''}}" bindtap="exit" class="exit">退出登录</button>

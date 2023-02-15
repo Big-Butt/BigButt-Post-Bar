@@ -1,0 +1,38 @@
+<!-- 轮播图区域 -->
+<view class="swiper">
+  <w-swiper swiperList="{{ sprList }}"></w-swiper>
+</view>
+
+<!-- 公告 -->
+<!-- <view wx:for="{{ gonggao_index }}" wx:key="*this">
+  <gonggao></gonggao>
+</view> -->
+<gonggao></gonggao>
+
+<!-- 内容区域 -->
+<view class="index-container">
+  <view class="jingxuan">精选置顶帖子</view>
+  <view class="All">
+    <navigator class="article" wx:for="{{article}}" wx:key="index" url="/pages/article/article?articleId={{index}}">
+      <view class="userInfo">
+        <image class="touxiang" src="{{item.touxiang}}" mode="aspectFill"></image>
+        <view class="userName">
+          @{{item.user_name}}
+        </view>
+      </view>
+
+      <view class="title">
+        {{item.title}}
+      </view>
+
+      <view class="img">
+        <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+      </view>
+
+      <view class="content">
+        {{item.content}}
+      </view>
+
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/barlist/barlist",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/wx-login/wx-login",
+    "pages/register/register",
+    "pages/follow/follow",
+    "pages/publish/publish",
+    "pages/article/article",
+    "pages/personal/personal",
+    "pages/blacklist/blacklist",
+    "pages/my-article/my-article"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#9fc6ff",
+    "navigationBarTitleText": "大皮鼓贴吧",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#9fc6ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabs/首页.png",
+        "selectedIconPath": "/images/tabs/首页-o.png"
+      },
+      {
+        "pagePath": "pages/barlist/barlist",
+        "text": "逛贴",
+        "iconPath": "/images/tabs/资讯.png",
+        "selectedIconPath": "/images/tabs/资讯-o.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "/images/tabs/发布.png",
+        "selectedIconPath": "/images/tabs/发布.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "我的帖子",
+        "iconPath": "/images/tabs/我的帖子.png",
+        "selectedIconPath": "/images/tabs/我的帖子-o.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/tabs/我的.png",
+        "selectedIconPath": "/images/tabs/我的-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 3000
+  }
+}

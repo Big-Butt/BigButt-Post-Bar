@@ -1,0 +1,66 @@
+/* pages/publish/publish.wxss */
+page {
+  background-color: rgb(245, 245, 247);
+}
+
+.publish-box {
+  width: 95%;
+  /* height: 760rpx; */
+  margin: 20rpx auto;
+  border-bottom: 4px solid pink;
+}
+
+.publish-box .title {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 95%;
+  height: 70rpx;
+  margin: 10rpx auto;
+  /* padding: 20rpx; */
+}
+
+.publish-box .title .title-text {
+  font-size: 40rpx;
+  font-weight: bold;
+  line-height: 70rpx;
+}
+
+.publish-box .title input {
+  width: 80%;
+  height: 40rpx;
+  border: 1px solid #ccc;
+  font-size: 30rpx;
+  padding: 10rpx 0 10rpx 10rpx;
+}
+
+.publish-box .content {
+  margin: 30rpx 20rpx;
+  width: 95%;
+  height: 450rpx;
+}
+
+.publish-box .content textarea {
+  border: 1px solid #ccc;
+  width: 95%;
+  height: 450rpx;
+  padding: 10rpx;
+}
+
+.publish-box .img {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 20rpx auto;
+  margin-bottom: 10rpx;
+  border: 1px solid #ccc;
+}
+
+.publish-box image {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+button {
+  margin: 20rpx;
+  box-shadow: 10rpx 10rpx #ccc;
+}
+

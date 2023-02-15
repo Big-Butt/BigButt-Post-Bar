@@ -1,0 +1,89 @@
+page {
+  background-color: rgb(245, 245, 247);
+}
+
+.my {
+  width: 100%;
+  height: 290rpx;
+  color: antiquewhite;
+  background: url('https://img0.baidu.com/it/u=2207336324,3505880378&fm=253&fmt=auto&app=138&f=JPEG?w=780&h=290');
+  /* background-size: contain; */
+  background-size: 100% 100%;
+}
+
+.my .touxiang {
+  width: 170rpx;
+  height: 170rpx;
+  position: relative;
+  top: 90rpx;
+  left: 20rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 0 0 10rpx 5rpx #8ca8d0;
+}
+
+.my .touxiang image {
+  width: 170rpx;
+  height: 170rpx;
+  
+}
+
+.my .username {
+  width: 240rpx;
+  /* height: 44rpx; */
+  color: white;
+  font-size: 50rpx;
+  font-weight: 700;
+  position: relative;
+  left: 240rpx;
+  bottom: 40rpx;
+  -webkit-text-stroke: 1rpx #8ca8d0;
+}
+
+.my .gologin {
+  width: 180rpx;
+  font-weight: bold;
+  position: relative;
+  left: 220rpx;
+  bottom: 30rpx;
+}
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 2rpx solid #ccc;
+  border-top: 2rpx solid #ccc;
+  background-color: white;
+}
+
+.grid-list .grid-item {
+  width: 33.33%;
+  height: 220rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+  box-sizing: border-box;
+}
+
+.grid-item image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.grid-item view {
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+
+.exit {
+  border-bottom: 4rpx solid black;
+  border-right: 4rpx solid black;
+  background-color: white;
+  margin: 20rpx;
+  color: #D7000F;
+  box-shadow: 10rpx 10rpx #d8d8c2;
+}

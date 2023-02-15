@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "逛贴",
+  "navigationBarTextStyle":"black",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

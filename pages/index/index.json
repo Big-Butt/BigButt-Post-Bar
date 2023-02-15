@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "大皮鼓贴吧",
+  "navigationBarTextStyle":"black",
+  "usingComponents": {
+      "w-swiper": "/components/swiper/swiper",
+      "gonggao": "/components/gonggao/gonggao"
+  }
+}

@@ -1,0 +1,104 @@
+page {
+  background-color: rgb(245, 245, 247);
+}
+
+.All {
+  margin: 10rpx;
+  padding: 0;
+}
+
+/* 返回顶部 */
+.goTop {
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  bottom: 50rpx;
+  background: rgba(0, 0, 0, .3);
+  right: 30rpx;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.article,
+navigator {
+  width: 100%;
+  height: 290rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 8rpx solid #ccc;
+  background-color: white;
+  border-radius: 18rpx;
+  position: relative;
+}
+
+.article .title {
+  width: 450rpx;
+  overflow: hidden;
+  /* 超出部分用省略号显示 */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+  position: absolute;
+  left: 210rpx;
+  bottom: 140rpx;
+}
+
+.article .userInfo {
+  width: 95%;
+  height: 50rpx;
+  margin: 0 auto;
+  padding-top: 16rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.article .userInfo .userName {
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #757575;
+  position: absolute;
+  top: 16rpx;
+  left: 100rpx;
+}
+
+.article .userInfo .touxiang {
+  width: 68rpx;
+  height: 68rpx;
+  margin: 0 auto;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rpx;
+}
+
+.article .img {
+  width: 170rpx;
+  height: 170rpx;
+  border: 1px solid #ccc;
+  margin-left: 30rpx;
+  position: absolute;
+  top: 90rpx;
+}
+
+.article .img image {
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.article .content {
+  margin: 20rpx auto;
+  width: 450rpx;
+  font-size: 26rpx;
+  color: #757575;
+  /* border: 2px dashed #ccc; */
+  overflow: hidden;
+  /* 超出部分用省略号显示 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  position: absolute;
+  left: 240rpx;
+  bottom: 20rpx;
+}

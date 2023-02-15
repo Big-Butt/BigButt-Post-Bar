@@ -1,0 +1,10 @@
+<!--pages/register/register.wxml-->
+<view class="login-box">
+  <view class="login-inp">
+    会员昵称: <input type="nickname" placeholder="请输入1-6位昵称" bindinput="getUsername" />
+  </view>
+  <view class="login-inp">
+    会员密码: <input type="text" placeholder="请输入1-12位密码" bindinput="getPassword" />
+  </view>
+  <button bindtap="registerUser">注册</button>
+</view>

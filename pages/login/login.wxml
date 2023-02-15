@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="login-box">
+  <view class="login-inp">
+    会员昵称: <input type="nickname" placeholder="请输入会员昵称" bindinput="getUsername" />
+  </view>
+  <view class="login-inp">
+    会员密码: <input type="text" placeholder="请输入会员密码" bindinput="getPassword" />
+  </view>
+  <view class="zhuce">
+    还未注册账号？ 点击
+    <navigator class="register" url="/pages/register/register">立即注册</navigator>
+  </view>
+  <button bindtap="userLogin">登录</button>
+</view>
+
+<view class="disanfang">
+  第三方登录方式
+  <view class="wx-logo" bindtap="getUserProfile">
+    <image src="/images/微信图标.png"></image>
+  </view>
+</view>

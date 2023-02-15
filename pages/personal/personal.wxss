@@ -1,0 +1,33 @@
+/* pages/personal/personal.wxss */
+.title {
+  font-size: 50rpx;
+  font-weight: bolder;
+  padding: 20rpx;
+}
+
+.small {
+  margin: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.gray {
+  font-size: smaller;
+  color: gray;
+}
+
+input {
+  margin: 20rpx;
+  padding: 10rpx;
+  border: 2px solid #9fc6ff;
+  border-radius: 20rpx;
+}
+
+.submit {
+  padding: 20rpx;
+  margin: 100rpx auto;
+  background-color: #9fc6ff;
+  border-right: 4rpx solid black;
+  border-bottom: 4rpx solid black;
+  box-shadow: 16rpx 16rpx 30rpx 0 #4687e9;
+  border-radius: 20rpx;
+}

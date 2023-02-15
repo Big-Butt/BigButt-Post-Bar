@@ -1,0 +1,10 @@
+<!--components/swiper/swiper.wxml-->
+<view class="swp-container">
+    <swiper class="swiper-box" indicator-dots="true" autoplay="true" interval="7000" circular="true">
+        <block wx:for="{{ swiperList }}" wx:key="index">
+            <swiper-item>
+                <image class="swiper-img" src="{{ item }}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

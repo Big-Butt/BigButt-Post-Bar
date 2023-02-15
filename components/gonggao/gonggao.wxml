@@ -1,0 +1,7 @@
+<!--components/gonggao/gonggao.wxml-->
+<view class="gonggao">
+  <view class="gg-title">公告栏</view>
+  <view class="gg-content">
+    <view class="contents" wx:for="{{content}}" wx:key="index">{{index + 1}}. {{item.content}}</view>
+  </view>
+</view>
